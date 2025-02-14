@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: url('https://img.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_1142-8392.jpg?t=st=1739444190~exp=1739447790~hmac=5ba48205b1fbc5be4c491f5df833e75bfe7a0d2cb19c2817032dc5dac3f69ced&w=996');
+}
+
+
+.logo{
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: auto;
+
+}
+
+
+
+.language-buttons{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+
+.language-buttons button{
+    margin: 5px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+
+.language-buttons button:hover{
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 0 10px red, 0 0 20px orange, 0 0 40px yellow;
+    animation: glowAnimation 1.5s infinite linear;
+
+}
+
+@keyframes glowAnimation{
+    0%{ box-shadow: 0 0 5px red, 0 0 10px orange, 0 0 15px yellow;}
+    25%{ box-shadow: 0 0 5px yellow, 0 0 10px green, 0 0 15px cyan;}
+    50%{ box-shadow: 0 0 5px cyan,0 0 10px blue, 0 0 15px purple;}
+75%{ box-shadow: 0 0 5px purple,0 0 10px pink, 0 0 15px red;}
+100%{ box-shadow: 0 0 5px red,0 0 10px orange, 0 0 15px yellow;}
+}
+
+.animated-text{
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    animation: fadeIn 2s ease-in-out;
+    color:rgb(228, 13, 45);
+}
+
+
+
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(-20px);
+    }
+    to{
+        opacity:1;
+        transform: translateY(0);
+    }
+}
+
+
+.login-button{
+    margin-top: 25px;
+    padding: 10px;
+    border: none;
+    width: 300px;
+    display: flexbox;
+    align-items: center;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 25px;
+    background: transparent;
+    color: white;
+    transition: transform 0.3s ease, background 0.4 ease;
+    filter: drop-shadow(0px 0px 10px rgba(176,42,178,0.8));
+
+
+}
+
+.login-button:hover{
+    background: transparent;
+    transform:scale(1.1);
+
+}
+
+
+.login-container{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0,0,0,0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.login-box{
+    background: rgba(6,5,5,0.2);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+    width: 300px;
+    color: wheat;
+
+
+}
+
+.input-group{
+    position:relative;
+    margin-bottom: 15px;
+
+}
+.input-group input{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+
+@keyframes fadeInPopup{
+    from{
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+
+    }
+}
+
+
+@keyframes fadeInPopup{
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{ opacity: 0;
+        transform: scale(0.8);
+
+    }
+} 
+
+
+#map{
+    width: 80%;
+    height: 500px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+
+}
+    
